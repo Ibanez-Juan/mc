@@ -1,40 +1,353 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  
+/* Formatações gerais
+-------------------------- */
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
-.cabecalho {
-    background: #120A8F;
-    padding: 1em;
-    color:antiquewhite;
+body {
+    background: url(../img/body.jpg),
+    linear-gradient(50deg, #fa0047, #170136);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
-
-header a {
-    text-decoration: none;
+nav.navbar-transparent {
+    padding: 5px 0px;
+    background: rgba(56, 2, 2, 0.7);
 }
 
-header nav a {
-    text-decoration: none;
-    color: #AAA;
-    margin-right: 10px;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
 }
 
-header nav a:hover {
-    text-decoration: none;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e64444;
+}
+
+.navbar-light .navbar-toggle {
+    color: rgba(255,255,255,0.7);
+    border-color: rgba(255,255,255,0.7);
+}
+
+.logo-escrito h3{
+    color: black;
+    font-size: 50px;
+    padding: 0px;
+    font-family: 'Oregano', cursive;
+    letter-spacing: 5px;
+}
+
+.logo-escrito span{
+    color: red;
+    font-family: 'Oregano', cursive;
+}
+.logo-escrito p{
+    text-align: top;
+    font-family: 'Oregano', cursive;
     color: #fff;
+    line-height: 0px;
 }
 
-section{
-    padding: 1em;
-    align-items: center;
+/*Modificação do texto logo
+------------------------------ */
+.texto-logo {
+    text-align: left;
+    color: #fff;
+    cursor: default;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
 }
 
-footer div {
-    background:black;
-    padding:1em;
-    text-align:center;
-    color: #AAA;
+.texto-logo h2 {
+    font-size: 1.11em;
+    padding: 10px 0 0 0;
+    margin-top: 6px;
+    margin-left: -30px;
+}
+
+.texto-logo p {
+    display: inline;
+    font-size: 0.8em;
+    margin: 0;
+    margin-left: -30px;
+}
+
+/*Estilo Personalizado
+***************************************/
+.estilo-personalizado {
+    padding:15px 5px 15px 5px;
+}
+
+.estilo-personalizado p{
+    color:  black;
+    text-align: justify;
+    padding: 5px;
+}
+
+.estilo-personalizado h2 {
+    color: #7c25f8;
+    padding-bottom: 5px;
+
+}
+
+.estilo-personalizado h3{
+    color: black;
+    padding-bottom: 20px;
+}
+
+
+
+#servicos {
+    background: white;
+}
+
+#servicos h2,h3 {
+    color: #7c25f8;
+}
+
+/* capa
+--------------------------*/
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+
+}
+
+.btn-roxo {
+    background: #7c25f8;
+}
+
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background-color: white;
+    color: black; 
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.servicos{
+    background: white;
+    color:black;
+}
+
+.servicos h1{
+    color: black;
+    font-size: 2.8em;
+}
+
+.carousel-item h1{
+    color: rgb(224, 32, 32);
+}
+
+.sobre {
+    background: white;
+    margin:10px 0 10px 0;
+    padding: 20px;
+    text-align: center;
+
+}
+
+span{
+    text-align: justify;
+}
+
+
+/* capa de apresentação
+--------------------------*/
+.capa {
+    text-align: center;
+}
+
+.conteudo {
+    width: 500px;
+    height: 500px;
+}
+
+/* Recursos
+*********************/
+.caixa {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.recursos {
+    background: #fff;
+    padding-top: 40px;
+}
+
+.recursos img{
+    height: 17em;
+    right: 17em;
+}
+
+.recursos h4 {
+    padding-top: 20px;
+}
+
+.recursos p{
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+/** Quem somos
+*************************/
+#quem-somos {
+    color: black;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#quem-somos h3 {
+    color: black; 
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+.albuns img{
+    height: 11em;
+    right: 11em;
+}
+
+#quem-somos img{
+    height: 28em;
+    right: 28em;
+    padding-left: 50px;
+}
+
+
+/* Contato
+---------------------------*/
+.header-img {
+    height: 150px;
+}
+
+.contato {
+    background: white;
+    padding: 30px;
+}
+
+
+/* Rodape
+--------------------------*/
+footer {
+    background: #000;
+    padding: 30px 0px 20px 0px;
+    position: relative;
+}
+
+footer span {
+    color: grey;
+    text-transform: uppercase;
+}
+
+footer h4 {
+    color: grey;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #f09b9b;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
+
+/* Tipografia
+--------------------------*/
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}   
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+     .btn-custom {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+
+}
+
+/*Small devices (landscape phone, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+       
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 991.98px) and (max-width: 1199px){
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+    h1 {
+        font-size: 6em;
+    }
 }
