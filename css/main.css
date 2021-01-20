@@ -9,7 +9,7 @@ html, body, #home {
 
 body {
     background: url(../img/body.jpg),
-    linear-gradient(50deg, #fa0047, #170136);
+    linear-gradient(50deg, #3c2d64, #170136);
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
