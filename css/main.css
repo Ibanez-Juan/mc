@@ -73,29 +73,6 @@ nav.navbar-transparent {
 
 /*Estilo Personalizado
 ***************************************/
-.estilo-personalizado {
-    padding:15px 5px 15px 5px;
-}
-
-.estilo-personalizado p{
-    color:  black;
-    text-align: justify;
-    padding: 5px;
-}
-
-.estilo-personalizado h2 {
-    color: #7c25f8;
-    padding-bottom: 5px;
-
-}
-
-.estilo-personalizado h3{
-    color: black;
-    padding-bottom: 20px;
-}
-
-
-
 #servicos {
     background: white;
     margin-top: 5.5em;
@@ -122,9 +99,7 @@ nav.navbar-transparent {
     font-size: 2.8em;
 }
 
-.carousel-item h1{
-    color: rgb(224, 32, 32);
-}
+
 
 .sobre {
     background: white;
